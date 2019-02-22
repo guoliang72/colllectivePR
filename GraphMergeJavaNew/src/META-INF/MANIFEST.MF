@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Class-Path: xmlParserAPIs-2.6.2.jar TableLayout-20050920.jar commons-c
+ odec-1.3.jar jgrapht-core-1.1.0.jar commons-logging-1.0.jar commons-l
+ ang3-3.5.jar xpp3_min-1.1.3.4.O.jar xpp3-1.1.3.4.O.jar jgap-3.4.4.jar
+  commons-cli-1.0.jar trove4j-2.0.2.jar java-string-similarity-1.1.0.j
+ ar junit-3.8.1.jar log4j-1.2.9.jar xstream-1.2.2.jar antlr4-runtime-4
+ .6.jar commons-lang-2.3.jar jgrapht-io-1.1.0.jar junit-addons-1.4.jar
+  jcgrid-0.05.jar jcip-annotations-1.0.jar xercesImpl-2.6.2.jar
+Main-Class: cise.Main
+
