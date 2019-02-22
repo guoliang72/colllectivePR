@@ -1,0 +1,327 @@
+digraph G {
+  1 [ label="printf(\"%d\\n\", a[i]) : [1]
+printf(\"%d\", j) : [2, 6]
+printf(\"%d\", k) : [8]
+printf(\"%d\", i) : [3, 5, 7, 9]
+printf(\"%d\", c) : [0]
+printf(\"%d\", a[i]) : [4]
+" ];
+  2 [ label="scanf(\"%d\", &p) : [7]
+scanf(\"%d\", &sz[i]) : [3]
+scanf(\"%d\", &A[i]) : [5]
+scanf(\"%d\", &a[i]) : [0, 1, 4]
+scanf(\"%d \", &sz[i]) : [8]
+scanf(\"%d\", &x) : [9]
+scanf(\"%d\", &w[i]) : [2]
+scanf(\"%d\", &e) : [6]
+" ];
+  3 [ label="scanf(\"%d\", &n) : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+" ];
+  4 [ label="return 0; : [0, 3, 4, 5, 7, 8, 9]
+" ];
+  5 [ label="ENTRY : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+" ];
+  6 [ label="int j : [1, 4]
+int o : [6]
+int c : [0]
+int a : [2, 3, 5]
+" ];
+  7 [ label="int m[100] : [2]
+" ];
+  8 [ label="int n : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+" ];
+  9 [ label="int a[n] : [0, 1]
+int w[100] : [2]
+int A[n] : [5]
+int sz[100] : [3]
+int sz[n] : [8]
+int a[110] : [4]
+" ];
+  10 [ label="int j = 1 : [2]
+" ];
+  11 [ label="int i = 0 : [2]
+int p : [7]
+int x : [9]
+int e : [6]
+" ];
+  12 [ label="int k : [6, 8]
+int j : [0]
+int b : [2, 5]
+" ];
+  13 [ label="int a[101] = {0} : [9]
+int a[102] = {0} : [7]
+int B[101] : [5]
+int jishu[n] : [1]
+int t : [8]
+int s[101] : [2]
+int a[2333] = {0} : [6]
+int zs[100] = {0} : [3]
+int b[101] : [0]
+int b[110] = {0} : [4]
+" ];
+  14 [ label="int j = 0 : [2]
+" ];
+  15 [ label="int j : [3]
+int m : [6]
+int q : [2]
+" ];
+  16 [ label="int i = 0 : [2]
+int j : [6]
+int i : [0, 1, 3, 4, 5, 7, 8, 9]
+" ];
+  17 [ label="i = 1 : [4, 7]
+i = 0 : [0, 1, 3, 5, 9]
+t = 0 : [8]
+j = j + 1 : [2]
+j = 1 : [6]
+" ];
+  18 [ label="i = 0 : [0, 8]
+j = 0 : [1]
+j = i + 1 : [4]
+a = 0 : [2, 5]
+" ];
+  19 [ label="i = i + 1 : [0, 1, 2, 3, 4, 5, 8]
+" ];
+  20 [ label="a[p] = a[p] + 1 : [7]
+t = t + 1 : [8]
+b[j] = b[j] + 1 : [0]
+a[e] = a[e] + 1 : [6]
+a[x] = x : [9]
+zs[a] = zs[a] + 1 : [3]
+jishu[i] = jishu[i] + 1 : [1]
+s[b] = s[b] + 1 : [2]
+B[i] = B[i] + 1 : [5]
+" ];
+  21 [ label="i = 0 : [5]
+" ];
+  22 [ label="b[j] = 0 : [0]
+t = 0 : [8]
+B[i] = 0 : [5]
+jishu[i] = 0 : [1]
+m[i] = i : [2]
+a = sz[i] : [3]
+" ];
+  23 [ label="b = 0 : [5]
+k = 0 : [6]
+" ];
+  24 [ label="k = k + 1 : [8]
+j = j + 1 : [0, 6]
+b = b + 1 : [2]
+i = i + 1 : [3, 4, 5, 7, 9]
+" ];
+  25 [ label="i = 0 : [0, 1, 3, 4, 5, 8]
+w[j] = 0 : [2]
+" ];
+  26 [ label="i = 1 : [7]
+i = 0 : [1, 3, 4, 5, 9]
+j = 0 : [0]
+b = 1 : [2]
+k = 1 : [8]
+j = 1 : [6]
+" ];
+  27 [ label="j = j + 1 : [2, 6]
+i = i + 1 : [0, 1, 3, 4, 5, 7, 9]
+" ];
+  28 [ label="i = i + 1 : [2, 5]
+" ];
+  29 [ label="j = j + 1 : [1, 4]
+a = a + 1 : [2, 5]
+i = i + 1 : [0, 8]
+" ];
+  30 [ label="c = i : [0]
+" ];
+  31 [ label="j < n : [1, 4]
+i < n : [0, 8]
+a < n : [2, 5]
+" ];
+  32 [ label="break; : [1, 2, 3, 4]
+" ];
+  33 [ label="i < 101 : [5]
+i < n : [1, 3, 4]
+j < 101 : [0]
+b < 101 : [2]
+k < 101 : [8]
+" ];
+  34 [ label="a[i] == j : [0]
+A[a] == i : [5]
+a[i] == a[j] : [1, 4]
+w[a] == b : [2]
+sz[i] = k : [8]
+" ];
+  35 [ label="i < 101 : [5]
+i < n : [2]
+" ];
+  36 [ label="i < n : [0, 1, 2, 3, 4, 5, 8, 9]
+j <= n : [6]
+i <= n : [7]
+" ];
+  37 [ label="(jishu[i] % 2) == 0 : [1]
+(zs[i] % 2) != 0 : [3]
+(b[i] / 2) != 0 : [0]
+(s[j] % 2) != 0 : [2]
+(a[i] % 2) == 1 : [9]
+(B[i] % 2) != 0 : [5]
+(t % 2) != 0 : [8]
+(a[j] % 2) != 0 : [6]
+(b[i] % 2) == 1 : [4]
+(a[i] % 2) != 0 : [7]
+" ];
+  38 [ label="int main() : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+" ];
+  39 [ label="j < 101 : [2]
+" ];
+  40 [ label="i < 100 : [9]
+i < 101 : [0, 5]
+i < n : [1, 3, 4]
+j < 101 : [2]
+j <= n : [6]
+i <= n : [7]
+" ];
+  5 -> 38 [ label="CONTROL" ];
+  38 -> 8 [ label="CONTROL" ];
+  38 -> 16 [ label="CONTROL" ];
+  38 -> 12 [ label="CONTROL" ];
+  38 -> 13 [ label="CONTROL" ];
+  38 -> 17 [ label="CONTROL" ];
+  38 -> 3 [ label="CONTROL" ];
+  38 -> 9 [ label="CONTROL" ];
+  38 -> 25 [ label="CONTROL" ];
+  38 -> 36 [ label="CONTROL" ];
+  38 -> 26 [ label="CONTROL" ];
+  38 -> 33 [ label="CONTROL" ];
+  38 -> 4 [ label="CONTROL" ];
+  36 -> 2 [ label="CONTROL" ];
+  36 -> 19 [ label="CONTROL" ];
+  33 -> 18 [ label="CONTROL" ];
+  33 -> 31 [ label="CONTROL" ];
+  33 -> 37 [ label="CONTROL" ];
+  33 -> 22 [ label="CONTROL" ];
+  33 -> 24 [ label="CONTROL" ];
+  31 -> 34 [ label="CONTROL" ];
+  31 -> 29 [ label="CONTROL" ];
+  34 -> 20 [ label="CONTROL" ];
+  37 -> 1 [ label="CONTROL" ];
+  17 -> 20 [ label="DATA" ];
+  17 -> 37 [ label="DATA" ];
+  3 -> 36 [ label="DATA" ];
+  3 -> 31 [ label="DATA" ];
+  25 -> 36 [ label="DATA" ];
+  2 -> 19 [ label="DATA" ];
+  19 -> 36 [ label="DATA" ];
+  26 -> 33 [ label="DATA" ];
+  26 -> 34 [ label="DATA" ];
+  26 -> 1 [ label="DATA" ];
+  26 -> 24 [ label="DATA" ];
+  18 -> 31 [ label="DATA" ];
+  18 -> 34 [ label="DATA" ];
+  18 -> 29 [ label="DATA" ];
+  20 -> 20 [ label="DATA" ];
+  20 -> 37 [ label="DATA" ];
+  29 -> 31 [ label="DATA" ];
+  29 -> 34 [ label="DATA" ];
+  29 -> 29 [ label="DATA" ];
+  22 -> 20 [ label="DATA" ];
+  22 -> 37 [ label="DATA" ];
+  24 -> 33 [ label="DATA" ];
+  24 -> 34 [ label="DATA" ];
+  24 -> 1 [ label="DATA" ];
+  24 -> 24 [ label="DATA" ];
+  8 -> 3 [ label="DECL" ];
+  16 -> 29 [ label="DECL" ];
+  16 -> 19 [ label="DECL" ];
+  16 -> 18 [ label="DECL" ];
+  16 -> 2 [ label="DECL" ];
+  16 -> 25 [ label="DECL" ];
+  12 -> 26 [ label="DECL" ];
+  12 -> 24 [ label="DECL" ];
+  13 -> 20 [ label="DECL" ];
+  13 -> 17 [ label="DECL" ];
+  13 -> 22 [ label="DECL" ];
+  9 -> 2 [ label="DECL" ];
+  38 -> 6 [ label="CONTROL" ];
+  38 -> 40 [ label="CONTROL" ];
+  40 -> 37 [ label="CONTROL" ];
+  40 -> 27 [ label="CONTROL" ];
+  37 -> 32 [ label="CONTROL" ];
+  32 -> 40 [ label="CONTROL" ];
+  3 -> 33 [ label="DATA" ];
+  3 -> 40 [ label="DATA" ];
+  26 -> 22 [ label="DATA" ];
+  26 -> 20 [ label="DATA" ];
+  17 -> 40 [ label="DATA" ];
+  17 -> 1 [ label="DATA" ];
+  17 -> 27 [ label="DATA" ];
+  27 -> 40 [ label="DATA" ];
+  27 -> 37 [ label="DATA" ];
+  27 -> 1 [ label="DATA" ];
+  27 -> 27 [ label="DATA" ];
+  16 -> 27 [ label="DECL" ];
+  16 -> 17 [ label="DECL" ];
+  16 -> 26 [ label="DECL" ];
+  6 -> 18 [ label="DECL" ];
+  6 -> 29 [ label="DECL" ];
+  5 -> 9 [ label="CONTROL" ];
+  5 -> 13 [ label="CONTROL" ];
+  26 -> 18 [ label="DATA" ];
+  24 -> 18 [ label="DATA" ];
+  16 -> 24 [ label="DECL" ];
+  38 -> 1 [ label="CONTROL" ];
+  37 -> 30 [ label="CONTROL" ];
+  24 -> 22 [ label="DATA" ];
+  24 -> 20 [ label="DATA" ];
+  17 -> 30 [ label="DATA" ];
+  30 -> 1 [ label="DATA" ];
+  27 -> 30 [ label="DATA" ];
+  6 -> 30 [ label="DECL" ];
+  38 -> 15 [ label="CONTROL" ];
+  33 -> 20 [ label="CONTROL" ];
+  6 -> 22 [ label="DECL" ];
+  38 -> 11 [ label="CONTROL" ];
+  36 -> 20 [ label="CONTROL" ];
+  36 -> 24 [ label="CONTROL" ];
+  26 -> 36 [ label="DATA" ];
+  2 -> 20 [ label="DATA" ];
+  24 -> 36 [ label="DATA" ];
+  11 -> 2 [ label="DECL" ];
+  38 -> 23 [ label="CONTROL" ];
+  12 -> 23 [ label="DECL" ];
+  38 -> 21 [ label="CONTROL" ];
+  38 -> 35 [ label="CONTROL" ];
+  35 -> 22 [ label="CONTROL" ];
+  35 -> 28 [ label="CONTROL" ];
+  21 -> 35 [ label="DATA" ];
+  21 -> 22 [ label="DATA" ];
+  21 -> 28 [ label="DATA" ];
+  28 -> 35 [ label="DATA" ];
+  28 -> 22 [ label="DATA" ];
+  28 -> 28 [ label="DATA" ];
+  16 -> 28 [ label="DECL" ];
+  16 -> 21 [ label="DECL" ];
+  38 -> 14 [ label="CONTROL" ];
+  38 -> 39 [ label="CONTROL" ];
+  38 -> 7 [ label="CONTROL" ];
+  38 -> 18 [ label="CONTROL" ];
+  38 -> 31 [ label="CONTROL" ];
+  38 -> 10 [ label="CONTROL" ];
+  39 -> 25 [ label="CONTROL" ];
+  39 -> 17 [ label="CONTROL" ];
+  31 -> 26 [ label="CONTROL" ];
+  31 -> 33 [ label="CONTROL" ];
+  33 -> 34 [ label="CONTROL" ];
+  3 -> 35 [ label="DATA" ];
+  19 -> 35 [ label="DATA" ];
+  19 -> 22 [ label="DATA" ];
+  19 -> 28 [ label="DATA" ];
+  25 -> 34 [ label="DATA" ];
+  17 -> 39 [ label="DATA" ];
+  17 -> 25 [ label="DATA" ];
+  17 -> 17 [ label="DATA" ];
+  9 -> 25 [ label="DECL" ];
+  14 -> 17 [ label="DECL" ];
+  14 -> 27 [ label="DECL" ];
+  7 -> 22 [ label="DECL" ];
+  11 -> 19 [ label="DECL" ];
+  11 -> 28 [ label="DECL" ];
+  10 -> 17 [ label="DECL" ];
+  10 -> 27 [ label="DECL" ];
+}

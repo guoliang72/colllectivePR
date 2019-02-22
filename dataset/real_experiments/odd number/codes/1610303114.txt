@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int n,i,x;
+    int a[101]={0};
+    scanf("%d",&n);
+    for(i=0;i<n;i=i+1){
+        scanf("%d",&x);
+        a[x]=x;			// 应当a[x]++;
+    }
+    for(i=0;i<100;i=i+1){
+        if(a[i]%2==1){
+            printf("%d",i);
+        }
+    }
+return 0;
+}

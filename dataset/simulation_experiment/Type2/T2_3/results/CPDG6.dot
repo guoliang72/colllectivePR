@@ -1,0 +1,167 @@
+digraph G {
+  1 [ label="scanf(\"%d\", &n) : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  2 [ label="scanf(\"%lf\", &a) : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  3 [ label="printf(\"%.2lf\\n\", sum) : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  4 [ label="ENTRY : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  5 [ label="double sum : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  6 [ label="int i : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  7 [ label="int n : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  8 [ label="double a : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  9 [ label="a = 0 : [836]
+a = 0.1 * a : [835]
+sum = sum + a : [837, 838, 839, 840, 841, 842, 843]
+a = 0.5 * a : [834]
+" ];
+  10 [ label="i = i + 1 : [839]
+sum = sum + a : [834, 835, 836, 842]
+" ];
+  11 [ label="i = 0 : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  12 [ label="a = 0.1 * a : [841, 843]
+a = 0.5 * a : [836, 837, 838, 839, 840, 842]
+" ];
+  13 [ label="a = 0.1 * a : [836, 838, 839, 840, 842]
+a = 0.5 * a : [834, 835, 841, 843]
+a = 0.3 * a : [837]
+" ];
+  14 [ label="a = 0 : [834, 835, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  15 [ label="i = i + 1 : [834, 835, 836, 837, 838, 840, 841, 842, 843]
+" ];
+  16 [ label="sum = 0 : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  17 [ label="a = 0.1 * a : [837]
+a = 0.3 * a : [834, 835, 836, 838, 839, 840, 841, 843]
+" ];
+  18 [ label="(a >= 100) && (a < 200) : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  19 [ label="i < n : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  20 [ label="return 0; : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  21 [ label="a >= 500 : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  22 [ label="a < 100 : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  23 [ label="(a >= 200) && (a < 500) : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  24 [ label="int main() : [834, 835, 836, 837, 838, 839, 840, 841, 842, 843]
+" ];
+  4 -> 24 [ label="CONTROL" ];
+  24 -> 6 [ label="CONTROL" ];
+  24 -> 7 [ label="CONTROL" ];
+  24 -> 8 [ label="CONTROL" ];
+  24 -> 5 [ label="CONTROL" ];
+  24 -> 16 [ label="CONTROL" ];
+  24 -> 1 [ label="CONTROL" ];
+  24 -> 2 [ label="CONTROL" ];
+  24 -> 11 [ label="CONTROL" ];
+  24 -> 19 [ label="CONTROL" ];
+  24 -> 3 [ label="CONTROL" ];
+  24 -> 20 [ label="CONTROL" ];
+  19 -> 22 [ label="CONTROL" ];
+  19 -> 9 [ label="CONTROL" ];
+  19 -> 15 [ label="CONTROL" ];
+  22 -> 14 [ label="CONTROL" ];
+  22 -> 18 [ label="CONTROL" ];
+  18 -> 13 [ label="CONTROL" ];
+  18 -> 23 [ label="CONTROL" ];
+  23 -> 17 [ label="CONTROL" ];
+  23 -> 21 [ label="CONTROL" ];
+  21 -> 12 [ label="CONTROL" ];
+  16 -> 9 [ label="DATA" ];
+  16 -> 3 [ label="DATA" ];
+  1 -> 19 [ label="DATA" ];
+  2 -> 22 [ label="DATA" ];
+  2 -> 18 [ label="DATA" ];
+  2 -> 13 [ label="DATA" ];
+  2 -> 23 [ label="DATA" ];
+  2 -> 17 [ label="DATA" ];
+  2 -> 21 [ label="DATA" ];
+  2 -> 12 [ label="DATA" ];
+  2 -> 9 [ label="DATA" ];
+  11 -> 19 [ label="DATA" ];
+  11 -> 15 [ label="DATA" ];
+  14 -> 22 [ label="DATA" ];
+  14 -> 18 [ label="DATA" ];
+  14 -> 13 [ label="DATA" ];
+  14 -> 23 [ label="DATA" ];
+  14 -> 17 [ label="DATA" ];
+  14 -> 21 [ label="DATA" ];
+  14 -> 12 [ label="DATA" ];
+  14 -> 9 [ label="DATA" ];
+  13 -> 22 [ label="DATA" ];
+  13 -> 18 [ label="DATA" ];
+  13 -> 13 [ label="DATA" ];
+  13 -> 23 [ label="DATA" ];
+  13 -> 17 [ label="DATA" ];
+  13 -> 21 [ label="DATA" ];
+  13 -> 12 [ label="DATA" ];
+  13 -> 9 [ label="DATA" ];
+  17 -> 22 [ label="DATA" ];
+  17 -> 18 [ label="DATA" ];
+  17 -> 13 [ label="DATA" ];
+  17 -> 23 [ label="DATA" ];
+  17 -> 17 [ label="DATA" ];
+  17 -> 21 [ label="DATA" ];
+  17 -> 12 [ label="DATA" ];
+  17 -> 9 [ label="DATA" ];
+  12 -> 22 [ label="DATA" ];
+  12 -> 18 [ label="DATA" ];
+  12 -> 13 [ label="DATA" ];
+  12 -> 23 [ label="DATA" ];
+  12 -> 17 [ label="DATA" ];
+  12 -> 21 [ label="DATA" ];
+  12 -> 12 [ label="DATA" ];
+  12 -> 9 [ label="DATA" ];
+  9 -> 9 [ label="DATA" ];
+  9 -> 3 [ label="DATA" ];
+  15 -> 19 [ label="DATA" ];
+  15 -> 15 [ label="DATA" ];
+  6 -> 15 [ label="DECL" ];
+  6 -> 11 [ label="DECL" ];
+  7 -> 1 [ label="DECL" ];
+  8 -> 17 [ label="DECL" ];
+  8 -> 13 [ label="DECL" ];
+  8 -> 2 [ label="DECL" ];
+  8 -> 12 [ label="DECL" ];
+  8 -> 14 [ label="DECL" ];
+  5 -> 16 [ label="DECL" ];
+  5 -> 9 [ label="DECL" ];
+  24 -> 13 [ label="CONTROL" ];
+  24 -> 9 [ label="CONTROL" ];
+  19 -> 2 [ label="CONTROL" ];
+  19 -> 3 [ label="CONTROL" ];
+  19 -> 10 [ label="CONTROL" ];
+  18 -> 16 [ label="CONTROL" ];
+  11 -> 10 [ label="DATA" ];
+  10 -> 19 [ label="DATA" ];
+  10 -> 10 [ label="DATA" ];
+  6 -> 10 [ label="DECL" ];
+  22 -> 10 [ label="CONTROL" ];
+  16 -> 10 [ label="DATA" ];
+  2 -> 10 [ label="DATA" ];
+  10 -> 3 [ label="DATA" ];
+  8 -> 9 [ label="DECL" ];
+  5 -> 10 [ label="DECL" ];
+  22 -> 21 [ label="CONTROL" ];
+  21 -> 23 [ label="CONTROL" ];
+  23 -> 18 [ label="CONTROL" ];
+  18 -> 17 [ label="CONTROL" ];
+  19 -> 1 [ label="CONTROL" ];
+  23 -> 10 [ label="CONTROL" ];
+  10 -> 9 [ label="DATA" ];
+  18 -> 10 [ label="CONTROL" ];
+  21 -> 16 [ label="CONTROL" ];
+  19 -> 14 [ label="CONTROL" ];
+  22 -> 16 [ label="CONTROL" ];
+  21 -> 10 [ label="CONTROL" ];
+}

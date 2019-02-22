@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    int n,a,len,b[10000];
+    scanf("%d",&n);
+    int i;
+    for(i=0;i<n;i=i+1){
+        len=0;
+        scanf("%d",&a);
+        if(a==0)printf("0\n");		// 应有continue
+        while(a>0){{			// 多一层括号，下面的代码层级全错了
+            b[len]=a%3;
+            a=a/3;
+			len=len+1;
+        }
+        for(i=len-1;i>=0;i=i-1){
+            printf("%d",b[i]);
+        }
+        printf("\n");}
+    }
+    return 0;
+}

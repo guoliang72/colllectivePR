@@ -1,0 +1,31 @@
+//
+//  main.c
+//  模拟考试
+//
+//  Created by lmh on 17/1/10.
+//  Copyright &#169; 2017年 lmh. All rights reserved.
+//
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n,i,a[10000];
+    int m,j;
+	scanf("%d",&n);
+    for(i = 0;i < n;i=i+1){
+        j = 0;
+        scanf("%d",&m);		// 少m==0判断
+        while(m > 0){
+            a[j] = m % 3;
+            m = m / 3;
+            j=j+1;
+        }
+        int k;
+        for(k = j - 1;k >= 0;k--){
+            printf("%d",a[k]);
+        }
+        printf("\n");
+    }
+    return 0;
+}

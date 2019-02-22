@@ -1,0 +1,256 @@
+digraph G {
+  1 [ label="scanf(\"%d\", &n) : [2]
+scanf(\"%d\", &k) : [0, 1, 3, 4, 5, 6, 7, 8, 9]
+" ];
+  2 [ label="scanf(\"%d\", &a[i]) : [0, 1, 3, 4, 5, 6, 7, 8, 9]
+scanf(\"%d\", u[i]) : [2]
+" ];
+  3 [ label="scanf(\"%d\\n\", &n) : [1, 7]
+scanf(\"%d\", &n) : [0, 3, 4, 5, 6, 8, 9]
+" ];
+  4 [ label="printf(\"%d\\n\", a[i]) : [0, 1, 3, 5, 6, 7, 8, 9]
+printf(\"%d\\n\", &a[i]) : [4]
+printf(\"%d\\n\", u[i]) : [2]
+" ];
+  5 [ label="scanf(\"\\n\") : [1]
+" ];
+  6 [ label="return 0; : [0, 1, 2, 3, 6, 7, 8, 9]
+" ];
+  7 [ label="ENTRY : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+" ];
+  8 [ label="int k : [2]
+int n : [0, 1, 3, 4, 5, 6, 7, 8, 9]
+" ];
+  9 [ label="int temp : [1, 2, 3, 8, 9]
+int t : [0, 5, 6, 7]
+int tem : [4]
+" ];
+  10 [ label="int j : [0, 1, 3, 4, 5, 6, 7, 8, 9]
+int m : [2]
+" ];
+  11 [ label="int k : [0, 1, 3, 4, 5, 6, 7, 8, 9]
+int n : [2]
+" ];
+  12 [ label="int a[1000] : [0, 1, 3, 4, 7, 9]
+int a[100] : [6]
+int a[1002] : [8]
+int u[1002] : [2]
+int a[10000] : [5]
+" ];
+  13 [ label="int i : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+" ];
+  14 [ label="j = j + 1 : [5, 7]
+i = i + 1 : [0, 1, 3, 4, 6, 8, 9]
+" ];
+  15 [ label="i = i + 1 : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+" ];
+  16 [ label="j = i + 1 : [1]
+j = j + 1 : [0, 4, 6, 8, 9]
+m = m + 1 : [2]
+i = i + 1 : [5, 7]
+" ];
+  17 [ label="a[j + 1] = a[j] : [0]
+a[i] = a[j] : [8]
+a[i] = a[i + 1] : [5, 7]
+u[m] = u[m + 1] : [2]
+a[j] = a[j + 1] : [1, 3, 4, 6, 9]
+" ];
+  18 [ label="i = i - 1 : [2, 7]
+j = j - 1 : [3]
+" ];
+  19 [ label="a[j + 1] = temp : [1, 3, 9]
+a[j + 1] = tem : [4]
+a[j] = temp : [8]
+a[j + 1] = t : [6]
+a[j] = t : [0]
+a[i + 1] = t : [5, 7]
+u[m + 1] = temp : [2]
+" ];
+  20 [ label="i = 0 : [0, 1, 4, 6, 8, 9]
+j = 0 : [5, 7]
+i = i : [3]
+" ];
+  21 [ label="i = n - 1 : [2]
+i = k - 1 : [7]
+" ];
+  22 [ label="k = k + 1 : [5]
+i = i + 1 : [0, 1, 2, 3, 4, 6, 8, 9]
+" ];
+  23 [ label="tem = a[j] : [4]
+t = a[j + 1] : [0]
+t = a[i] : [5, 7]
+t = a[j] : [6]
+temp = a[j] : [1, 3, 9]
+temp = a[i] : [8]
+temp = u[m] : [2]
+" ];
+  24 [ label="i = 0 : [0, 1, 2, 3, 4, 5, 6, 8, 9]
+" ];
+  25 [ label="i = 0 : [5, 7]
+j = 0 : [0, 1, 4, 6, 8, 9]
+j = n - 2 : [3]
+m = 0 : [2]
+" ];
+  26 [ label="i = 0 : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+" ];
+  27 [ label="i > 0 : [2]
+j >= 0 : [3]
+i >= 0 : [7]
+" ];
+  28 [ label="i < n : [2]
+i < k : [1, 3, 4, 5, 6, 8, 9]
+i < ((n - k) + 1) : [0]
+" ];
+  29 [ label="i < n : [0, 2, 3, 4, 5, 6, 7, 8, 9]
+i <= n : [1]
+" ];
+  30 [ label="a[i] < a[i + 1] : [5, 7]
+a[j] > a[j + 1] : [9]
+a[i] > a[j] : [8]
+a[j] < a[j + 1] : [0, 1, 3, 4, 6]
+u[m] < u[m + 1] : [2]
+" ];
+  31 [ label="i < n : [0, 1, 3, 6, 7, 8]
+i < (n - 1) : [4, 9]
+j < (n - 1) : [5]
+" ];
+  32 [ label="int main() : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+" ];
+  33 [ label="j < ((n - i) - 1) : [0, 4, 7, 9]
+j < (n - i) : [6, 8]
+i < ((n - j) - 1) : [5]
+j < i : [1]
+m < i : [2]
+" ];
+  7 -> 32 [ label="CONTROL" ];
+  32 -> 12 [ label="CONTROL" ];
+  32 -> 8 [ label="CONTROL" ];
+  32 -> 11 [ label="CONTROL" ];
+  32 -> 13 [ label="CONTROL" ];
+  32 -> 9 [ label="CONTROL" ];
+  32 -> 3 [ label="CONTROL" ];
+  32 -> 26 [ label="CONTROL" ];
+  32 -> 29 [ label="CONTROL" ];
+  32 -> 1 [ label="CONTROL" ];
+  32 -> 10 [ label="CONTROL" ];
+  32 -> 20 [ label="CONTROL" ];
+  32 -> 31 [ label="CONTROL" ];
+  32 -> 24 [ label="CONTROL" ];
+  32 -> 28 [ label="CONTROL" ];
+  32 -> 6 [ label="CONTROL" ];
+  29 -> 2 [ label="CONTROL" ];
+  29 -> 15 [ label="CONTROL" ];
+  31 -> 25 [ label="CONTROL" ];
+  31 -> 33 [ label="CONTROL" ];
+  31 -> 14 [ label="CONTROL" ];
+  33 -> 30 [ label="CONTROL" ];
+  33 -> 16 [ label="CONTROL" ];
+  30 -> 23 [ label="CONTROL" ];
+  30 -> 17 [ label="CONTROL" ];
+  30 -> 19 [ label="CONTROL" ];
+  28 -> 4 [ label="CONTROL" ];
+  28 -> 22 [ label="CONTROL" ];
+  3 -> 29 [ label="DATA" ];
+  3 -> 31 [ label="DATA" ];
+  3 -> 33 [ label="DATA" ];
+  26 -> 29 [ label="DATA" ];
+  2 -> 15 [ label="DATA" ];
+  15 -> 29 [ label="DATA" ];
+  1 -> 28 [ label="DATA" ];
+  20 -> 31 [ label="DATA" ];
+  20 -> 33 [ label="DATA" ];
+  20 -> 14 [ label="DATA" ];
+  25 -> 33 [ label="DATA" ];
+  25 -> 30 [ label="DATA" ];
+  25 -> 23 [ label="DATA" ];
+  25 -> 17 [ label="DATA" ];
+  25 -> 19 [ label="DATA" ];
+  25 -> 16 [ label="DATA" ];
+  23 -> 19 [ label="DATA" ];
+  19 -> 30 [ label="DATA" ];
+  19 -> 23 [ label="DATA" ];
+  19 -> 17 [ label="DATA" ];
+  19 -> 4 [ label="DATA" ];
+  16 -> 33 [ label="DATA" ];
+  16 -> 30 [ label="DATA" ];
+  16 -> 23 [ label="DATA" ];
+  16 -> 17 [ label="DATA" ];
+  16 -> 19 [ label="DATA" ];
+  16 -> 16 [ label="DATA" ];
+  14 -> 31 [ label="DATA" ];
+  14 -> 33 [ label="DATA" ];
+  14 -> 14 [ label="DATA" ];
+  24 -> 28 [ label="DATA" ];
+  24 -> 4 [ label="DATA" ];
+  24 -> 22 [ label="DATA" ];
+  22 -> 28 [ label="DATA" ];
+  22 -> 4 [ label="DATA" ];
+  22 -> 22 [ label="DATA" ];
+  12 -> 19 [ label="DECL" ];
+  12 -> 2 [ label="DECL" ];
+  12 -> 17 [ label="DECL" ];
+  8 -> 3 [ label="DECL" ];
+  11 -> 1 [ label="DECL" ];
+  13 -> 24 [ label="DECL" ];
+  13 -> 14 [ label="DECL" ];
+  13 -> 20 [ label="DECL" ];
+  13 -> 15 [ label="DECL" ];
+  13 -> 2 [ label="DECL" ];
+  13 -> 26 [ label="DECL" ];
+  13 -> 22 [ label="DECL" ];
+  9 -> 23 [ label="DECL" ];
+  10 -> 16 [ label="DECL" ];
+  10 -> 25 [ label="DECL" ];
+  20 -> 30 [ label="DATA" ];
+  20 -> 23 [ label="DATA" ];
+  20 -> 17 [ label="DATA" ];
+  14 -> 30 [ label="DATA" ];
+  14 -> 23 [ label="DATA" ];
+  14 -> 17 [ label="DATA" ];
+  32 -> 21 [ label="CONTROL" ];
+  32 -> 27 [ label="CONTROL" ];
+  27 -> 25 [ label="CONTROL" ];
+  27 -> 33 [ label="CONTROL" ];
+  27 -> 18 [ label="CONTROL" ];
+  1 -> 29 [ label="DATA" ];
+  1 -> 21 [ label="DATA" ];
+  21 -> 27 [ label="DATA" ];
+  21 -> 33 [ label="DATA" ];
+  21 -> 18 [ label="DATA" ];
+  18 -> 27 [ label="DATA" ];
+  18 -> 33 [ label="DATA" ];
+  18 -> 18 [ label="DATA" ];
+  13 -> 21 [ label="DECL" ];
+  13 -> 18 [ label="DECL" ];
+  1 -> 22 [ label="DATA" ];
+  13 -> 16 [ label="DECL" ];
+  13 -> 25 [ label="DECL" ];
+  10 -> 14 [ label="DECL" ];
+  10 -> 20 [ label="DECL" ];
+  11 -> 22 [ label="DECL" ];
+  32 -> 25 [ label="CONTROL" ];
+  31 -> 20 [ label="CONTROL" ];
+  31 -> 16 [ label="CONTROL" ];
+  33 -> 14 [ label="CONTROL" ];
+  27 -> 4 [ label="CONTROL" ];
+  25 -> 31 [ label="DATA" ];
+  16 -> 31 [ label="DATA" ];
+  21 -> 4 [ label="DATA" ];
+  18 -> 4 [ label="DATA" ];
+  31 -> 27 [ label="CONTROL" ];
+  27 -> 30 [ label="CONTROL" ];
+  3 -> 25 [ label="DATA" ];
+  26 -> 20 [ label="DATA" ];
+  15 -> 20 [ label="DATA" ];
+  25 -> 27 [ label="DATA" ];
+  25 -> 18 [ label="DATA" ];
+  18 -> 30 [ label="DATA" ];
+  18 -> 23 [ label="DATA" ];
+  18 -> 17 [ label="DATA" ];
+  18 -> 19 [ label="DATA" ];
+  10 -> 18 [ label="DECL" ];
+  32 -> 5 [ label="CONTROL" ];
+  20 -> 16 [ label="DATA" ];
+  14 -> 16 [ label="DATA" ];
+  3 -> 28 [ label="DATA" ];
+}

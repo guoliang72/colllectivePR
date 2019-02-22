@@ -1,0 +1,109 @@
+15255.813164431871
+1610122402.dot 18: (b[i] / 2) != 0
+    Different Content
+    正确
+1610122402.dot 19: c = i
+    Not Merged
+    复杂
+1610122402.dot 22: printf("%d", c)
+    Different Edge Type
+    Different Edge Type
+    复杂
+1610122407.dot 15: i < n
+    Different Content
+    正确
+1610122407.dot 28: (jishu[i] % 2) == 0
+    Different Content
+    正确
+1610122407.dot 30: printf("%d\n", a[i])
+    Different Content
+    错误
+1610122806.dot 11: int j = 0
+    Not Merged
+    正确
+1610122806.dot 11: j < 101
+    Not Merged
+    正确
+1610122806.dot 11: j = j + 1
+    Different Edge Type
+    Different Content
+    Different Edge Type
+    Different Edge Type
+    Different Edge Type
+    正确
+1610122806.dot 12: w[j] = 0
+    Different Content
+    正确
+1610122806.dot 14: int m[100]
+    Not Merged
+    冗余
+1610122806.dot 15: i < n
+    Not Merged
+    冗余
+1610122806.dot 15: i = i + 1
+    Not Merged
+    冗余
+1610122814.dot 9: i < n
+    Different Content
+    错误-另一种写法
+1610122814.dot 10: a = sz[i]
+    Different Content
+    错误-另一种写法
+1610122814.dot 11: zs[a] = zs[a] + 1
+    Different Edge Type
+    错误-另一种写法
+1610124204.dot 9: i < n
+    Different Content
+    正确
+1610124204.dot 10: j = i + 1
+    Different Content
+    正确
+1610124204.dot 17: (b[i] % 2) == 1
+    Different Content
+    错误-另一种写法
+1610301128.dot 6: b = 0
+    Not Merged
+    冗余
+1610301128.dot 9: i < 101
+    Not Merged
+    复杂
+1610301128.dot 9: i = 0
+    Not Merged
+    复杂
+1610301128.dot 9: i = i + 1
+    Not Merged
+    复杂
+1610301207.dot 3: k = 0
+    Not Merged
+    冗余
+1610301207.dot 6: j <= n
+    Different Content
+    错误-另一种写法
+1610301207.dot 6: j = 1
+    Different Content
+    错误-另一种写法
+1610301213.dot 10: scanf("%d ", &sz[i])
+    Different Content
+    错误
+1610301213.dot 12: k = 1
+    Different Content
+    错误
+1610301213.dot 14: sz[i] = k
+    Different Content
+    正确
+1610301213.dot 15: t = t + 1
+    Different Edge Type
+    错误
+1610301213.dot 18: (t % 2) != 0
+    Different Edge Type
+    错误-另一种写法
+1610301213.dot 19: printf("%d", k)
+    Different Edge Type
+    Different Edge Type
+    错误
+1610303114.dot 8: a[x] = x
+    Different Content
+    正确
+1610303114.dot 11: (a[i] % 2) == 1
+    Different Content
+    错误-另一种写法

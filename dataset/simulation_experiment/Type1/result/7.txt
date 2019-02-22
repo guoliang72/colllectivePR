@@ -1,0 +1,35 @@
+Base8.cds.dot 8: sum = 5
+Base8.cds.dot 11: scanf("%.2lf", &n)
+Base8.cds.dot 12: a <= 101
+Base8.cds.dot 14: (a >= 100) && (a < 200)
+Base8.cds.dot 15: a = 0.1 * a
+Base8.cds.dot 16: (a >= 200) && (a < 500)
+Base8.cds.dot 17: a = 0.3 * a
+Base8.cds.dot 18: a >= 500
+Base8.cds.dot 19: a = 0.5 * a
+Base1.cds.dot 5: float n
+Base1.cds.dot 9: scanf("%.2lf", &n)
+Base1.cds.dot 10: i < (n - 1)
+Base1.cds.dot 17: a = 0.1 * a
+Base0.cds.dot 16: a >= 200
+Base9.cds.dot 6: float a
+Base9.cds.dot 10: i = i + 3
+Base9.cds.dot 11: scanf("%f", &a)
+Base2.cds.dot 7: float sum
+Base2.cds.dot 8: sum = 3
+Base2.cds.dot 12: a <= 101
+Base2.cds.dot 18: a > 500
+Base3.cds.dot 15: a = 0.3 * a
+Base3.cds.dot 17: a = 0.5 * a
+Base3.cds.dot 23: printf("%lf\n", sum)
+Base7.cds.dot 8: sum = 5
+Base7.cds.dot 10: i = 3
+Base5.cds.dot 19: a = 0.3 * a
+Base4.cds.dot 6: float a
+Base4.cds.dot 8: sum = 2
+Base4.cds.dot 9: scanf("%lf", &n)
+Base4.cds.dot 13: a = 100
+Base4.cds.dot 14: a < 200
+Base4.cds.dot 15: a = 0.5 * a
+Base4.cds.dot 17: a = 0.5 * a
+Base4.cds.dot 23: printf("%.2lf", sum)

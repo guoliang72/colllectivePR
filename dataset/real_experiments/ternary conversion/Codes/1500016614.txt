@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+	int n,i,j;
+	scanf("%d",&n);
+	for(i=1;i<=n;i=i+1)
+	{
+		int m;
+		int k=0;
+		scanf("%d",&m);
+		int a[20000]={0};
+		if(m==0)
+		{
+			printf("0");		// 应有\n
+		}
+		else{
+		for(j=0;m!=0;j=j+1)
+		{
+			a[j]=m%3;
+			m=m/3;
+			k=k+1;
+	    }
+		for(j=k-1;j>=1;j=j-1)		// 应当j>=0
+		{
+			printf("%d",a[j]);
+		}
+		printf("%d\n",a[0]);	// 多余
+	}
+	}
+	return 0;
+}

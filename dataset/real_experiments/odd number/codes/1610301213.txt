@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+int n;
+int i,k;
+int t;
+t=0;
+scanf("%d",&n);
+int sz[n];
+for(i=0;i<n;i=i+1){
+    scanf("%d ",&sz[i]);
+}
+for(k=1;k<101;k=k+1){
+    for(i=0;i<n;i=i+1){
+        if(sz[i]=k){			// 应为==
+            t=t+1;
+        }
+    }
+    if((t%2)!=0){
+        printf("%d",k);
+    }
+    t=0;				
+}
+return 0;
+}

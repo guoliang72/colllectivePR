@@ -1,0 +1,193 @@
+digraph G {
+  1 [ label="printf(\"%.2lf\\n\", sum) : [664, 665, 666, 667, 668, 669, 670, 671, 672, 673]
+" ];
+  2 [ label="scanf(\"%d\", &n) : [664, 665, 666, 667, 668, 669, 670, 671, 672, 673]
+" ];
+  3 [ label="scanf(\"%lf\", &a) : [664, 665, 666, 667, 668, 669, 670, 671, 672, 673]
+" ];
+  4 [ label="ENTRY : [664, 665, 666, 667, 668, 669, 670, 671, 672, 673]
+" ];
+  5 [ label="double sum : [664, 665, 666, 667, 668, 669, 670, 671, 672, 673]
+" ];
+  6 [ label="int n : [664, 665, 666, 667, 668, 669, 670, 671, 672, 673]
+" ];
+  7 [ label="int i : [664, 665, 666, 667, 668, 669, 670, 671, 672, 673]
+" ];
+  8 [ label="double a : [664, 665, 666, 667, 668, 669, 670, 671, 672, 673]
+" ];
+  9 [ label="i = 0 : [673]
+" ];
+  10 [ label="i = 0 : [671]
+sum = 0 : [664, 665, 667, 668, 669, 670, 672]
+" ];
+  11 [ label="a = 0.5 * a : [664]
+a = 0.3 * a : [665, 666, 667, 668, 669, 671, 673]
+" ];
+  12 [ label="i = 0 : [664, 665, 666, 667, 668, 669, 670, 672]
+sum = 0 : [671, 673]
+" ];
+  13 [ label="i = i + 1 : [671]
+sum = sum + a : [664, 666, 668, 670, 672]
+" ];
+  14 [ label="a = 0.1 * a : [664, 670]
+a = 0.5 * a : [665, 666, 667, 668, 669, 672]
+" ];
+  15 [ label="i = i + 1 : [664, 665, 666, 667, 668, 669, 670, 672, 673]
+" ];
+  16 [ label="a = 0 : [665, 666, 667, 668, 669, 670, 671, 672, 673]
+" ];
+  17 [ label="sum = sum + a : [671, 673]
+" ];
+  18 [ label="a = 0 : [664]
+sum = sum + a : [665, 667, 669]
+a = 0.5 * a : [666, 671, 673]
+a = 0.3 * a : [670, 672]
+" ];
+  19 [ label="a = 0.1 * a : [665, 666, 667, 668, 669, 671, 672, 673]
+a = 0.5 * a : [670]
+a = 0.3 * a : [664]
+" ];
+  20 [ label="return 0; : [664, 665, 666, 667, 668, 669, 670, 671, 672, 673]
+" ];
+  21 [ label="(a >= 100) && (a < 200) : [665]
+(a >= 200) && (a < 500) : [664, 670]
+a < 100 : [666, 667, 668, 669, 671, 672, 673]
+" ];
+  22 [ label="int main() : [664, 665, 666, 667, 668, 669, 670, 671, 672, 673]
+" ];
+  23 [ label="a >= 500 : [664, 665, 666, 667, 668, 669, 670, 672, 673]
+(a >= 200) && (a < 500) : [671]
+" ];
+  24 [ label="a < 100 : [664, 665, 670]
+" ];
+  25 [ label="i < n : [664, 665, 666, 667, 668, 669, 670, 671, 672, 673]
+" ];
+  26 [ label="a >= 500 : [671]
+(a >= 200) && (a < 500) : [666, 667, 668, 669, 672, 673]
+" ];
+  27 [ label="(a >= 100) && (a < 200) : [664, 666, 667, 668, 669, 670, 671, 672, 673]
+(a >= 200) && (a < 500) : [665]
+" ];
+  4 -> 22 [ label="CONTROL" ];
+  22 -> 7 [ label="CONTROL" ];
+  22 -> 6 [ label="CONTROL" ];
+  22 -> 8 [ label="CONTROL" ];
+  22 -> 5 [ label="CONTROL" ];
+  22 -> 14 [ label="CONTROL" ];
+  22 -> 2 [ label="CONTROL" ];
+  22 -> 12 [ label="CONTROL" ];
+  22 -> 25 [ label="CONTROL" ];
+  22 -> 18 [ label="CONTROL" ];
+  22 -> 20 [ label="CONTROL" ];
+  25 -> 3 [ label="CONTROL" ];
+  25 -> 21 [ label="CONTROL" ];
+  25 -> 13 [ label="CONTROL" ];
+  25 -> 15 [ label="CONTROL" ];
+  21 -> 16 [ label="CONTROL" ];
+  21 -> 27 [ label="CONTROL" ];
+  27 -> 19 [ label="CONTROL" ];
+  27 -> 26 [ label="CONTROL" ];
+  26 -> 11 [ label="CONTROL" ];
+  26 -> 23 [ label="CONTROL" ];
+  23 -> 1 [ label="CONTROL" ];
+  14 -> 18 [ label="DATA" ];
+  2 -> 25 [ label="DATA" ];
+  12 -> 25 [ label="DATA" ];
+  12 -> 15 [ label="DATA" ];
+  3 -> 21 [ label="DATA" ];
+  3 -> 27 [ label="DATA" ];
+  3 -> 19 [ label="DATA" ];
+  3 -> 26 [ label="DATA" ];
+  3 -> 11 [ label="DATA" ];
+  3 -> 23 [ label="DATA" ];
+  3 -> 13 [ label="DATA" ];
+  3 -> 18 [ label="DATA" ];
+  16 -> 13 [ label="DATA" ];
+  16 -> 18 [ label="DATA" ];
+  19 -> 13 [ label="DATA" ];
+  19 -> 18 [ label="DATA" ];
+  11 -> 13 [ label="DATA" ];
+  11 -> 18 [ label="DATA" ];
+  13 -> 1 [ label="DATA" ];
+  13 -> 13 [ label="DATA" ];
+  15 -> 25 [ label="DATA" ];
+  15 -> 15 [ label="DATA" ];
+  7 -> 15 [ label="DECL" ];
+  7 -> 12 [ label="DECL" ];
+  6 -> 2 [ label="DECL" ];
+  8 -> 16 [ label="DECL" ];
+  8 -> 18 [ label="DECL" ];
+  8 -> 14 [ label="DECL" ];
+  8 -> 3 [ label="DECL" ];
+  8 -> 19 [ label="DECL" ];
+  8 -> 11 [ label="DECL" ];
+  5 -> 13 [ label="DECL" ];
+  22 -> 10 [ label="CONTROL" ];
+  25 -> 16 [ label="CONTROL" ];
+  25 -> 1 [ label="CONTROL" ];
+  21 -> 3 [ label="CONTROL" ];
+  23 -> 14 [ label="CONTROL" ];
+  10 -> 1 [ label="DATA" ];
+  10 -> 18 [ label="DATA" ];
+  16 -> 21 [ label="DATA" ];
+  16 -> 27 [ label="DATA" ];
+  16 -> 19 [ label="DATA" ];
+  16 -> 26 [ label="DATA" ];
+  16 -> 11 [ label="DATA" ];
+  16 -> 23 [ label="DATA" ];
+  16 -> 14 [ label="DATA" ];
+  5 -> 18 [ label="DECL" ];
+  5 -> 10 [ label="DECL" ];
+  25 -> 19 [ label="CONTROL" ];
+  25 -> 24 [ label="CONTROL" ];
+  24 -> 16 [ label="CONTROL" ];
+  24 -> 21 [ label="CONTROL" ];
+  27 -> 11 [ label="CONTROL" ];
+  27 -> 23 [ label="CONTROL" ];
+  19 -> 19 [ label="DATA" ];
+  19 -> 24 [ label="DATA" ];
+  19 -> 21 [ label="DATA" ];
+  19 -> 27 [ label="DATA" ];
+  19 -> 11 [ label="DATA" ];
+  19 -> 23 [ label="DATA" ];
+  19 -> 14 [ label="DATA" ];
+  11 -> 19 [ label="DATA" ];
+  14 -> 19 [ label="DATA" ];
+  22 -> 1 [ label="CONTROL" ];
+  25 -> 18 [ label="CONTROL" ];
+  23 -> 17 [ label="CONTROL" ];
+  12 -> 17 [ label="DATA" ];
+  12 -> 1 [ label="DATA" ];
+  10 -> 25 [ label="DATA" ];
+  10 -> 13 [ label="DATA" ];
+  3 -> 17 [ label="DATA" ];
+  17 -> 17 [ label="DATA" ];
+  17 -> 1 [ label="DATA" ];
+  13 -> 25 [ label="DATA" ];
+  7 -> 10 [ label="DECL" ];
+  7 -> 13 [ label="DECL" ];
+  5 -> 12 [ label="DECL" ];
+  5 -> 17 [ label="DECL" ];
+  21 -> 19 [ label="CONTROL" ];
+  23 -> 11 [ label="CONTROL" ];
+  11 -> 14 [ label="DATA" ];
+  14 -> 13 [ label="DATA" ];
+  22 -> 9 [ label="CONTROL" ];
+  9 -> 25 [ label="DATA" ];
+  9 -> 15 [ label="DATA" ];
+  7 -> 9 [ label="DECL" ];
+  3 -> 14 [ label="DATA" ];
+  24 -> 2 [ label="CONTROL" ];
+  24 -> 23 [ label="CONTROL" ];
+  23 -> 21 [ label="CONTROL" ];
+  3 -> 24 [ label="DATA" ];
+  21 -> 13 [ label="CONTROL" ];
+  22 -> 3 [ label="CONTROL" ];
+  26 -> 10 [ label="CONTROL" ];
+  19 -> 26 [ label="DATA" ];
+  14 -> 21 [ label="DATA" ];
+  14 -> 27 [ label="DATA" ];
+  14 -> 26 [ label="DATA" ];
+  14 -> 23 [ label="DATA" ];
+  14 -> 14 [ label="DATA" ];
+}

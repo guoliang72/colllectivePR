@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+int  main(){
+  int n,i;
+ double sum,a;
+ scanf("%d\n",&n);
+ for(i=0;i<n;i=i+1){
+	scanf("%lf",&sum);
+    if(sum<100){
+        a=0;					// 应有初始化
+    }
+	else if(sum>=100&&sum<200){
+		a=sum*10/100;			// 表达式错，应为+=，下同
+    }else if(sum>=200&&sum<500){
+		a=sum*30/100;
+	}else{
+		a=sum*50/100;
+    }
+    printf("%.2lf",a);
+ } 
+ return 0;
+}

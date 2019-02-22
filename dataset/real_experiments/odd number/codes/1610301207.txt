@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+int n,j,e,k,m,o;k=0;  // k多余
+scanf("%d",&n);
+int a[2333]={0};
+for(j=1;j<=n;j=j+1){
+scanf("%d",&e);
+a[e]=a[e]+1;
+}
+for(j=1;j<=n;j=j+1){		// 循环边界错
+if(a[j]%2!=0){
+	printf("%d",j);
+}
+}
+
+}

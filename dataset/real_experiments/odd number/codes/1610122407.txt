@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int n,i,j;
+	scanf("%d",&n);
+	int a[n];
+	int jishu[n];
+	for(i=0;i<n;i=i+1)
+	{
+		scanf("%d",&a[i]);
+		
+
+	}
+	for(i=0;i<n;i++)    // 应为101
+	{
+		jishu[i]=0;
+		for(j=0;j<n;j=j+1)
+		{
+			if(a[i]==a[j])
+			{
+				jishu[i]=jishu[i]+1;
+			}
+		}
+	}
+	for(i=0;i<n;i=i+1)
+	{
+		if(jishu[i]%2==0)			// 应为!=0
+		{
+				printf("%d\n",a[i]);
+	
+			break;
+		}
+	}
+}

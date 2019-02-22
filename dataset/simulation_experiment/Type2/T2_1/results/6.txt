@@ -1,0 +1,19 @@
+1432.6589961778766
+Base4.cds.dot 12: sum < 100
+Base4.cds.dot 17: a = 0.3 * n
+Base2.cds.dot 12: i < 100
+Base2.cds.dot 21: i = sum + a
+Base5.cds.dot 17: n = 0.3 * a
+Base5.cds.dot 23: printf("%.2lf\n", n)
+Base0.cds.dot 10: i < sum
+Base9.cds.dot 14: (sum >= 100) && (sum < 200)
+Base1.cds.dot 16: (i >= 200) && (i < 500)
+Base1.cds.dot 17: a = 0.3 * i
+Base3.cds.dot 16: (n >= 200) && (n < 500)
+Base3.cds.dot 18: sum >= 500
+Base8.cds.dot 17: a = 0.3 * n
+Base8.cds.dot 19: n = 0.5 * a
+Base7.cds.dot 14: (i >= 100) && (i < 200)
+Base7.cds.dot 19: sum = 0.5 * a
+Base6.cds.dot 15: n = 0.1 * a
+Base6.cds.dot 18: n >= 500

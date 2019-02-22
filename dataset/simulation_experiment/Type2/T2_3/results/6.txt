@@ -1,0 +1,54 @@
+3857.0865871154265
+Base4.cds.dot 15: a = 0.3 * a
+Base4.cds.dot 17: sum = sum + a
+Base4.cds.dot 21: a = 0.3 * a
+Base2.cds.dot 17: a = 0.5 * a
+Base2.cds.dot 19: sum = sum + a
+Base2.cds.dot 21: a = 0.3 * a
+Base5.cds.dot 15: a = 0.5 * a
+Base5.cds.dot 18: a = 0.3 * a
+Base5.cds.dot 19: a = 0.1 * a
+Base0.cds.dot 11: a = 0.3 * a
+Base0.cds.dot 12: a < 100
+Base0.cds.dot 14: (a >= 100) && (a < 200)
+Base0.cds.dot 15: a = 0.1 * a
+Base0.cds.dot 16: (a >= 200) && (a < 500)
+Base0.cds.dot 17: sum = sum + a
+Base0.cds.dot 18: a >= 500
+Base0.cds.dot 19: a = 0.5 * a
+Base0.cds.dot 21: a = 0.3 * a
+Base9.cds.dot 13: a = 0.1 * a
+Base9.cds.dot 15: sum = sum + a
+Base9.cds.dot 21: a = 0
+Base1.cds.dot 14: (a >= 100) && (a < 200)
+Base1.cds.dot 15: a = 0.1 * a
+Base1.cds.dot 16: (a >= 200) && (a < 500)
+Base1.cds.dot 17: a = 0.3 * a
+Base1.cds.dot 18: a >= 500
+Base1.cds.dot 19: printf("%.2lf\n", sum)
+Base1.cds.dot 23: a = 0.5 * a
+Base3.cds.dot 11: sum = 0
+Base3.cds.dot 14: a = 0.1 * a
+Base3.cds.dot 15: (a >= 100) && (a < 200)
+Base3.cds.dot 16: (a >= 200) && (a < 500)
+Base3.cds.dot 17: a = 0.3 * a
+Base3.cds.dot 18: a >= 500
+Base3.cds.dot 19: a = 0.5 * a
+Base8.cds.dot 14: (a >= 100) && (a < 200)
+Base8.cds.dot 15: a = 0.1 * a
+Base8.cds.dot 16: (a >= 200) && (a < 500)
+Base8.cds.dot 17: a = 0.3 * a
+Base8.cds.dot 18: a >= 500
+Base8.cds.dot 19: a = 0.5 * a
+Base8.cds.dot 21: printf("%.2lf\n", sum)
+Base8.cds.dot 23: sum = sum + a
+Base7.cds.dot 14: (a >= 100) && (a < 200)
+Base7.cds.dot 15: a = 0.1 * a
+Base7.cds.dot 16: a >= 500
+Base7.cds.dot 17: a = 0.3 * a
+Base7.cds.dot 18: (a >= 200) && (a < 500)
+Base7.cds.dot 19: a = 0.5 * a
+Base6.cds.dot 16: a >= 500
+Base6.cds.dot 18: (a >= 200) && (a < 500)
+Base6.cds.dot 19: printf("%.2lf\n", sum)
+Base6.cds.dot 23: a = 0.5 * a

@@ -1,0 +1,15 @@
+630.2177096799956
+Base8.cds.dot 19: a = 0.1 * a
+Base0.cds.dot 7: int sum
+Base0.cds.dot 8: sum = 3
+Base9.cds.dot 19: a = 0.1 * a
+Base2.cds.dot 14: (a > 100) && (a < 200)
+Base6.cds.dot 4: float i
+Base6.cds.dot 10: i = i + 3
+Base6.cds.dot 15: a = 0.5 * a
+Base7.cds.dot 5: float n
+Base7.cds.dot 9: scanf("%lf", &n)
+Base7.cds.dot 11: scanf("%f", &a)
+Base7.cds.dot 12: a <= 100
+Base5.cds.dot 18: a > 500
+Base4.cds.dot 8: sum = 1

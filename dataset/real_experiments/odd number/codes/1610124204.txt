@@ -1,0 +1,23 @@
+#include<stdio.h>
+int a[110],b[110]={0};
+int main(){
+	int n,i,j;
+	scanf("%d",&n);
+	for(i=0;i<n;i=i+1){
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<n;i=i+1){                // 应为i<100
+		for(j=i+1;j<n;j=j+1){		// 循环初始条件错误
+			if(a[i]==a[j]){
+				b[i]++;
+			}
+		}
+	}
+	for(i=1;i<n;i=i+1){				// 循环初始条件错误
+		if(b[i]%2==1){
+			printf("%d",a[i]);
+			break;
+		}
+	}
+	return 0;
+}

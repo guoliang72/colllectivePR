@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,j,k;
+    int a;
+    scanf("%d",&n);
+    for(i=1;i<=n;i=i+1)
+    {
+      scanf("%d",&a);
+      int b[1000];
+      for(j=0;j<1000;j=j+1)		// 多余
+      {
+        b[j]=-1;
+      }
+      for(j=0;a>=3;j=j+1)	// a>=0即可
+      {
+        b[j]=a%3;
+        a=a/3;
+      }
+      b[j]=a%3;
+      for(k=0;k<=j;k=k+1)		// 输出反了
+      printf("%d",b[k]);
+      printf("\n");			
+    }
+    return 0;
+}

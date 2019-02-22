@@ -1,0 +1,94 @@
+5016.263206193649
+1400011104.dot 18: t = a[j + 1]
+    Different Content
+    错误-另一种正确写法
+1400011104.dot 20: a[j] = t
+    Different Content
+    错误-另一种正确写法
+1400011104.dot 24: i < ((n - k) + 1)
+    Different Edge Type
+    Different Content
+    正确
+1600011003.dot 6: scanf("%d\n", &n)
+    Different Content
+    复杂
+1600011003.dot 7: i <= n
+    Different Content
+    正确
+1600011003.dot 9: scanf("\n")
+    Not Merged
+    冗余
+1600011003.dot 12: j = i + 1
+    Different Edge Type
+    Different Edge Type
+    正确
+1600011007.dot 9: scanf("%d", u[i])
+    Different Content
+    正确
+1600011007.dot 12: i = i - 1
+    Different Edge Type
+    Different Content
+    错误-另一种正确写法
+1600011007.dot 12: i = n - 1
+    Not Merged
+    错误-另一种正确写法
+1600011007.dot 12: i > 0
+    Different Content
+    Different Edge Type
+    错误-另一种正确写法
+1600011007.dot 14: m < i
+    Different Edge Type
+    错误-另一种正确写法
+1600011021.dot 14: i = i
+    Different Content
+    Different Edge Type
+    Different Edge Type
+    正确
+1600011021.dot 16: j = j - 1
+    Different Content
+    正确
+1600011021.dot 16: j >= 0
+    Different Content
+    正确
+1600011021.dot 16: j = n - 2
+    Different Edge Type
+    Different Content
+    正确
+1600011058.dot 26: printf("%d\n", &a[i])
+    Different Content
+    正确
+1600011061.dot 22: k = k + 1
+    Different Edge Type
+    正确
+1600011095.dot 23: i >= 0
+    Not Merged
+    正确
+1600011095.dot 23: i = i - 1
+    Different Content
+    Different Edge Type
+    Different Edge Type
+    正确
+1600011095.dot 23: i = k - 1
+    Not Merged
+    正确
+1600011095.dot 25: printf("%d\n", a[i])
+    Different Edge Type
+    Different Edge Type
+    错误
+1600011102.dot 16: a[i] > a[j]
+    Different Edge Type
+    Different Edge Type
+    Different Content
+    正确
+1600011102.dot 18: temp = a[i]
+    Different Edge Type
+    Different Edge Type
+    正确
+1600011102.dot 19: a[i] = a[j]
+    Different Edge Type
+    Different Edge Type
+    Different Content
+    正确
+1600011102.dot 20: a[j] = temp
+    Different Content
+    正确

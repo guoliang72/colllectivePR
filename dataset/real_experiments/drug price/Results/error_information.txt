@@ -1,0 +1,100 @@
+9892.534467921396
+01.dot 10: a < 100
+    Different Content
+    冗余
+01.dot 13: a = 0.9 * a
+    Different Content
+    正确
+01.dot 15: a = 0.7 * a
+    Different Content
+    正确
+02.dot 8: scanf("%d", &a[i])
+    Different Content
+    正确
+02.dot 12: a[i] < 200
+    Different Content
+    错误-另一种正确写法
+02.dot 15: a[i] < 500
+    Different Content
+    另一种正确写法
+03.dot 13: (a[i] >= 100) && (a[i] < 200)
+    Different Edge Type
+    错误
+03.dot 16: (a[i] >= 200) && (a[i] < 500)
+    Different Edge Type
+    错误
+03.dot 24: printf(".2lf", s)
+    Different Content
+    正确
+04.dot 19: printf("%.2lf", a)
+    Different Edge Type
+    正确
+05.dot 11: sum = sum + a[i]
+    Different Content
+    正确
+05.dot 13: sum >= 500
+    Different Content
+    正确
+05.dot 14: sum = (((sum - 100) - 90) - 210) - ((sum - 500) * 0.5)
+    Different Content
+    正确
+05.dot 15: (sum >= 200) && (sum < 500)
+    Different Edge Type
+    Different Content
+    Different Edge Type
+    Different Edge Type
+    正确
+05.dot 16: sum = ((sum - 100) - 90) - ((sum - 200) * 0.7)
+    Different Content
+    正确
+05.dot 17: (sum >= 100) && (sum < 200)
+    Different Content
+    Different Edge Type
+    Different Edge Type
+    正确
+05.dot 18: sum = (sum - 100) - ((sum - 100) * 0.9)
+    Different Content
+    正确
+05.dot 19: a[i] < 100
+    Different Edge Type
+    Different Edge Type
+    Different Edge Type
+    错误
+05.dot 22: printf("%.2lf", sum)
+    Different Edge Type
+    错误-受其他语句影响
+06.dot 6: scanf("%d\n", &n)
+    Different Content
+    复杂
+06.dot 9: sum < 100
+    Different Content
+    正确
+06.dot 13: a = (sum * 10) / 100
+    Different Content
+    正确
+06.dot 15: a = (sum * 30) / 100
+    Different Content
+    正确
+06.dot 17: a = (sum * 50) / 100
+    Different Content
+    正确
+06.dot 19: printf("%.2lf", a)
+    Different Edge Type
+    Different Edge Type
+    错误-受其他语句影响
+07.dot 12: (a[i] >= 100) && (a[i] < 500)
+    Different Edge Type
+    Different Edge Type
+    正确
+08.dot 11: sum = sum + a[i]
+    Different Content
+    错误
+08.dot 13: (a[i] >= 100) && (a[i] < 200)
+    Different Edge Type
+    错误
+08.dot 16: (a[i] >= 200) && (a[i] < 500)
+    Different Edge Type
+    错误
+09.dot 8: scanf("%lf", a[i])
+    Different Content
+    正确

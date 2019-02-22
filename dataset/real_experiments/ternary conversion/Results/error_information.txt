@@ -1,0 +1,105 @@
+7470.55913891029
+1500013702.dot 14: return 0;
+    Different Edge Type
+    正确
+1500013713.dot 18: i >= 0
+    Different Edge Type
+    正确
+1500013713.dot 18: i = len - 1
+    Different Edge Type
+    正确
+1500013713.dot 21: printf("\n")
+    Different Edge Type
+    正确
+1500013714.dot 18: continue;
+    Not Merged
+    正确
+1500013714.dot 26: count = count - 1
+    Different Content
+    正确
+1500013714.dot 28: j = 0
+    Different Content
+    错误-另一种正确写法
+1500013714.dot 28: j < count
+    Different Edge Type
+    Different Content
+    错误-另一种正确写法
+1500013714.dot 28: j = j + 1
+    Different Content
+    错误-另一种正确写法
+1500013714.dot 30: printf("%d", num_3[(count - 1) - j])
+    Different Edge Type
+    Different Content
+    错误-另一种正确写法
+1500013727.dot 24: int k
+    Different Edge Type
+    复杂
+1500013730.dot 15: a >= 3
+    Different Content
+    正确
+1500013730.dot 16: b[count] = a % 3
+    Not Merged
+    正确
+1500013730.dot 20: b[count] = a
+    Different Content
+    Different Edge Type
+    正确
+1500013730.dot 21: i = count
+    Different Content
+    正确
+1500016611.dot 11: num != 0
+    Different Content
+    错误-另一种正确写法
+1500016614.dot 17: j = 0
+    Different Edge Type
+    错误
+1500016614.dot 17: m != 0
+    Different Content
+    Different Edge Type
+    错误-另一种正确写法
+1500016614.dot 23: j = k - 1
+    Different Edge Type
+    Different Edge Type
+    错误
+1500016614.dot 23: j >= 1
+    Different Edge Type
+    Different Content
+    正确
+1500016614.dot 27: printf("%d\n", a[0])
+    Different Edge Type
+    Different Edge Type
+    Different Content
+    正确
+1500016622.dot 6: int t
+    Not Merged
+    正确
+1500016622.dot 14: a[j] = m % 3
+    Different Edge Type
+    Different Edge Type
+    错误
+1500016642.dot 11: j < 1000
+    Not Merged
+    冗余
+1500016642.dot 13: b[j] = -1
+    Not Merged
+    冗余
+1500016642.dot 15: a >= 3
+    Different Content
+    正确
+1500016642.dot 17: b[j] = a % 3
+    Not Merged
+    正确
+1500016642.dot 20: b[j] = a % 3
+    Different Edge Type
+    正确
+1500016642.dot 21: k <= j
+    Different Edge Type
+    Different Edge Type
+    Different Content
+    正确
+1500016642.dot 21: k = 0
+    Different Content
+    正确
+1500016642.dot 21: k = k + 1
+    Different Content
+    正确

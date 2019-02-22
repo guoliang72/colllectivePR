@@ -1,0 +1,260 @@
+digraph DotForMerge{
+Node1 [label="ENTRY",type="ENTRY",coord="-1"];
+Node2 [label="int main()",type="CONTROL",coord="2"];
+Node4 [label="int n",type="DECL",coord="3",varname="n",vartype="int"];
+Node5 [label="int i",type="DECL",coord="3",varname="i",vartype="int"];
+Node6 [label="double a[1000]",type="DECL",coord="4",varname="a",vartype="double[]"];
+Node7 [label="double sum",type="DECL",coord="4",varname="sum",vartype="double"];
+Node8 [label="sum = 0",type="ASSIGN",coord="5"];
+Node9 [label="=",type="ASSIGNOP",coord="5",color=blue];
+Node10 [label="sum",type="VAR",coord="5",color=blue];
+Node11 [label="0",type="CONST",coord="5",color=blue];
+Node12 [label="scanf(\"%d\", &n)",type="CALL",coord="6"];
+Node13 [label="scanf",type="FUNCNAME",coord="6",color=blue];
+Node14 [label="Exprlist",type="EXPRS",coord="6",color=blue];
+Node15 [label="\"%d\"",type="CONST",coord="6",color=blue];
+Node16 [label="&",type="OP",coord="6",color=blue];
+Node17 [label="n",type="VAR",coord="6",color=blue];
+Node18 [label="i = 0",type="ASSIGN",coord="7"];
+Node19 [label="=",type="ASSIGNOP",coord="7",color=blue];
+Node20 [label="i",type="VAR",coord="7",color=blue];
+Node21 [label="0",type="CONST",coord="7",color=blue];
+Node22 [label="i < n",type="CONTROL",coord="7"];
+Node25 [label="scanf(\"%lf\", &a[i])",type="CALL",coord="8"];
+Node26 [label="scanf",type="FUNCNAME",coord="8",color=blue];
+Node27 [label="Exprlist",type="EXPRS",coord="8",color=blue];
+Node28 [label="\"%lf\"",type="CONST",coord="8",color=blue];
+Node29 [label="&",type="OP",coord="8",color=blue];
+Node30 [label="a",type="ARRVAR",coord="8",color=blue];
+Node31 [label="i",type="VAR",coord="8",color=blue];
+Node32 [label="i = i + 1",type="ASSIGN",coord="7"];
+Node33 [label="=",type="ASSIGNOP",coord="7",color=blue];
+Node34 [label="i",type="VAR",coord="7",color=blue];
+Node35 [label="+",type="OP",coord="7",color=blue];
+Node36 [label="1",type="CONST",coord="7",color=blue];
+Node37 [label="<",type="OP",coord="7",color=blue];
+Node38 [label="i",type="VAR",coord="7",color=blue];
+Node39 [label="n",type="VAR",coord="7",color=blue];
+Node40 [label="i = 0",type="ASSIGN",coord="10"];
+Node41 [label="=",type="ASSIGNOP",coord="10",color=blue];
+Node42 [label="i",type="VAR",coord="10",color=blue];
+Node43 [label="0",type="CONST",coord="10",color=blue];
+Node44 [label="i < n",type="CONTROL",coord="10"];
+Node47 [label="(a[i] >= 100) && (a[i] < 200)",type="CONTROL",coord="11"];
+Node49 [label="sum = sum + (a[i] * 0.1)",type="ASSIGN",coord="11"];
+Node50 [label="=",type="ASSIGNOP",coord="11",color=blue];
+Node51 [label="sum",type="VAR",coord="11",color=blue];
+Node52 [label="+",type="OP",coord="11",color=blue];
+Node53 [label="*",type="OP",coord="11",color=blue];
+Node54 [label="a",type="ARRVAR",coord="11",color=blue];
+Node55 [label="i",type="VAR",coord="11",color=blue];
+Node56 [label="0.1",type="CONST",coord="11",color=blue];
+Node57 [label="(a[i] >= 100) && (a[i] < 500)",type="CONTROL",coord="12"];
+Node59 [label="sum = sum + (a[i] * 0.3)",type="ASSIGN",coord="12"];
+Node60 [label="=",type="ASSIGNOP",coord="12",color=blue];
+Node61 [label="sum",type="VAR",coord="12",color=blue];
+Node62 [label="+",type="OP",coord="12",color=blue];
+Node63 [label="*",type="OP",coord="12",color=blue];
+Node64 [label="a",type="ARRVAR",coord="12",color=blue];
+Node65 [label="i",type="VAR",coord="12",color=blue];
+Node66 [label="0.3",type="CONST",coord="12",color=blue];
+Node67 [label="a[i] >= 500",type="CONTROL",coord="13"];
+Node69 [label="sum = sum + (a[i] * 0.5)",type="ASSIGN",coord="13"];
+Node70 [label="=",type="ASSIGNOP",coord="13",color=blue];
+Node71 [label="sum",type="VAR",coord="13",color=blue];
+Node72 [label="+",type="OP",coord="13",color=blue];
+Node73 [label="*",type="OP",coord="13",color=blue];
+Node74 [label="a",type="ARRVAR",coord="13",color=blue];
+Node75 [label="i",type="VAR",coord="13",color=blue];
+Node76 [label="0.5",type="CONST",coord="13",color=blue];
+Node77 [label=">=",type="OP",coord="13",color=blue];
+Node78 [label="a",type="ARRVAR",coord="13",color=blue];
+Node79 [label="i",type="VAR",coord="13",color=blue];
+Node80 [label="500",type="CONST",coord="13",color=blue];
+Node81 [label="&&",type="OP",coord="12",color=blue];
+Node82 [label=">=",type="OP",coord="12",color=blue];
+Node83 [label="a",type="ARRVAR",coord="12",color=blue];
+Node84 [label="i",type="VAR",coord="12",color=blue];
+Node85 [label="100",type="CONST",coord="12",color=blue];
+Node86 [label="<",type="OP",coord="12",color=blue];
+Node87 [label="a",type="ARRVAR",coord="12",color=blue];
+Node88 [label="500",type="CONST",coord="12",color=blue];
+Node89 [label="&&",type="OP",coord="11",color=blue];
+Node90 [label=">=",type="OP",coord="11",color=blue];
+Node91 [label="a",type="ARRVAR",coord="11",color=blue];
+Node92 [label="i",type="VAR",coord="11",color=blue];
+Node93 [label="100",type="CONST",coord="11",color=blue];
+Node94 [label="<",type="OP",coord="11",color=blue];
+Node95 [label="a",type="ARRVAR",coord="11",color=blue];
+Node96 [label="200",type="CONST",coord="11",color=blue];
+Node97 [label="i = i + 1",type="ASSIGN",coord="10"];
+Node98 [label="=",type="ASSIGNOP",coord="10",color=blue];
+Node99 [label="i",type="VAR",coord="10",color=blue];
+Node100 [label="+",type="OP",coord="10",color=blue];
+Node101 [label="1",type="CONST",coord="10",color=blue];
+Node102 [label="<",type="OP",coord="10",color=blue];
+Node103 [label="i",type="VAR",coord="10",color=blue];
+Node104 [label="n",type="VAR",coord="10",color=blue];
+Node105 [label="printf(\"%.2lf\", sum)",type="CALL",coord="15"];
+Node106 [label="printf",type="FUNCNAME",coord="15",color=blue];
+Node107 [label="Exprlist",type="EXPRS",coord="15",color=blue];
+Node108 [label="\"%.2lf\"",type="CONST",coord="15",color=blue];
+Node109 [label="sum",type="VAR",coord="15",color=blue];
+Node110 [label="return 0;",type="RETURN",coord="16"];
+Node1->Node2 [label = "CONTROL" ];
+Node2->Node4 [label = "CONTROL" ];
+Node2->Node5 [label = "CONTROL" ];
+Node2->Node6 [label = "CONTROL" ];
+Node2->Node7 [label = "CONTROL" ];
+Node2->Node8 [label = "CONTROL" ];
+Node2->Node12 [label = "CONTROL" ];
+Node2->Node18 [label = "CONTROL" ];
+Node2->Node22 [label = "CONTROL" ];
+Node2->Node40 [label = "CONTROL" ];
+Node2->Node44 [label = "CONTROL" ];
+Node2->Node105 [label = "CONTROL" ];
+Node2->Node110 [label = "CONTROL" ];
+Node22->Node25 [label = "CONTROL" ];
+Node22->Node32 [label = "CONTROL" ];
+Node44->Node47 [label = "CONTROL" ];
+Node44->Node97 [label = "CONTROL" ];
+Node47->Node49 [label = "CONTROL" ];
+Node47->Node57 [label = "CONTROL" ];
+Node57->Node59 [label = "CONTROL" ];
+Node57->Node67 [label = "CONTROL" ];
+Node67->Node69 [label = "CONTROL" ];
+Node8->Node49 [label = "DATA", style = dotted ]
+Node8->Node59 [label = "DATA", style = dotted ]
+Node8->Node69 [label = "DATA", style = dotted ]
+Node8->Node105 [label = "DATA", style = dotted ]
+Node12->Node22 [label = "DATA", style = dotted ]
+Node12->Node44 [label = "DATA", style = dotted ]
+Node18->Node22 [label = "DATA", style = dotted ]
+Node25->Node32 [label = "DATA", style = dotted ]
+Node32->Node22 [label = "DATA", style = dotted ]
+Node40->Node44 [label = "DATA", style = dotted ]
+Node40->Node47 [label = "DATA", style = dotted ]
+Node40->Node49 [label = "DATA", style = dotted ]
+Node40->Node57 [label = "DATA", style = dotted ]
+Node40->Node59 [label = "DATA", style = dotted ]
+Node40->Node67 [label = "DATA", style = dotted ]
+Node40->Node69 [label = "DATA", style = dotted ]
+Node40->Node97 [label = "DATA", style = dotted ]
+Node49->Node49 [label = "DATA", style = dotted ]
+Node49->Node59 [label = "DATA", style = dotted ]
+Node49->Node69 [label = "DATA", style = dotted ]
+Node49->Node105 [label = "DATA", style = dotted ]
+Node59->Node49 [label = "DATA", style = dotted ]
+Node59->Node59 [label = "DATA", style = dotted ]
+Node59->Node69 [label = "DATA", style = dotted ]
+Node59->Node105 [label = "DATA", style = dotted ]
+Node69->Node49 [label = "DATA", style = dotted ]
+Node69->Node59 [label = "DATA", style = dotted ]
+Node69->Node69 [label = "DATA", style = dotted ]
+Node69->Node105 [label = "DATA", style = dotted ]
+Node97->Node44 [label = "DATA", style = dotted ]
+Node97->Node47 [label = "DATA", style = dotted ]
+Node97->Node49 [label = "DATA", style = dotted ]
+Node97->Node57 [label = "DATA", style = dotted ]
+Node97->Node59 [label = "DATA", style = dotted ]
+Node97->Node67 [label = "DATA", style = dotted ]
+Node97->Node69 [label = "DATA", style = dotted ]
+Node97->Node97 [label = "DATA", style = dotted ]
+Node4->Node12 [label = "DECL"]
+Node5->Node32 [label = "DECL"]
+Node5->Node25 [label = "DECL"]
+Node5->Node18 [label = "DECL"]
+Node5->Node97 [label = "DECL"]
+Node5->Node40 [label = "DECL"]
+Node6->Node25 [label = "DECL"]
+Node7->Node49 [label = "DECL"]
+Node7->Node69 [label = "DECL"]
+Node7->Node59 [label = "DECL"]
+Node7->Node8 [label = "DECL"]
+Node8->Node9 [label = "AST" color=blue]
+Node9->Node10 [label = "DEFINEVAR" color=blue]
+Node9->Node11 [label = "USEVAR" color=blue]
+Node12->Node13 [label = "AST" color=blue]
+Node13->Node14 [label = "PARLIST" color=blue]
+Node14->Node15 [label = "PARAMETER" color=blue]
+Node14->Node16 [label = "PARAMETER" color=blue]
+Node16->Node17 [label = "OPVAR" color=blue]
+Node18->Node19 [label = "AST" color=blue]
+Node19->Node20 [label = "DEFINEVAR" color=blue]
+Node19->Node21 [label = "USEVAR" color=blue]
+Node22->Node37 [label = "AST" color=blue]
+Node25->Node26 [label = "AST" color=blue]
+Node26->Node27 [label = "PARLIST" color=blue]
+Node27->Node28 [label = "PARAMETER" color=blue]
+Node27->Node29 [label = "PARAMETER" color=blue]
+Node29->Node30 [label = "OPVAR" color=blue]
+Node30->Node31 [label = "SUBSCR" color=blue]
+Node32->Node33 [label = "AST" color=blue]
+Node33->Node34 [label = "DEFINEVAR" color=blue]
+Node33->Node35 [label = "USEVAR" color=blue]
+Node35->Node34 [label = "OPVAR" color=blue]
+Node35->Node36 [label = "OPVAR" color=blue]
+Node37->Node38 [label = "LEFTVAR" color=blue]
+Node37->Node39 [label = "RIGHTVAR" color=blue]
+Node40->Node41 [label = "AST" color=blue]
+Node41->Node42 [label = "DEFINEVAR" color=blue]
+Node41->Node43 [label = "USEVAR" color=blue]
+Node44->Node102 [label = "AST" color=blue]
+Node47->Node89 [label = "AST" color=blue]
+Node49->Node50 [label = "AST" color=blue]
+Node50->Node51 [label = "DEFINEVAR" color=blue]
+Node50->Node52 [label = "USEVAR" color=blue]
+Node52->Node51 [label = "OPVAR" color=blue]
+Node52->Node53 [label = "OPVAR" color=blue]
+Node53->Node54 [label = "OPVAR" color=blue]
+Node53->Node56 [label = "OPVAR" color=blue]
+Node54->Node55 [label = "SUBSCR" color=blue]
+Node57->Node81 [label = "AST" color=blue]
+Node59->Node60 [label = "AST" color=blue]
+Node60->Node61 [label = "DEFINEVAR" color=blue]
+Node60->Node62 [label = "USEVAR" color=blue]
+Node62->Node61 [label = "OPVAR" color=blue]
+Node62->Node63 [label = "OPVAR" color=blue]
+Node63->Node64 [label = "OPVAR" color=blue]
+Node63->Node66 [label = "OPVAR" color=blue]
+Node64->Node65 [label = "SUBSCR" color=blue]
+Node67->Node77 [label = "AST" color=blue]
+Node69->Node70 [label = "AST" color=blue]
+Node70->Node71 [label = "DEFINEVAR" color=blue]
+Node70->Node72 [label = "USEVAR" color=blue]
+Node72->Node71 [label = "OPVAR" color=blue]
+Node72->Node73 [label = "OPVAR" color=blue]
+Node73->Node74 [label = "OPVAR" color=blue]
+Node73->Node76 [label = "OPVAR" color=blue]
+Node74->Node75 [label = "SUBSCR" color=blue]
+Node77->Node78 [label = "LEFTVAR" color=blue]
+Node77->Node80 [label = "RIGHTVAR" color=blue]
+Node78->Node79 [label = "SUBSCR" color=blue]
+Node81->Node82 [label = "OPVAR" color=blue]
+Node81->Node86 [label = "OPVAR" color=blue]
+Node82->Node83 [label = "LEFTVAR" color=blue]
+Node82->Node85 [label = "RIGHTVAR" color=blue]
+Node83->Node84 [label = "SUBSCR" color=blue]
+Node86->Node87 [label = "LEFTVAR" color=blue]
+Node86->Node88 [label = "RIGHTVAR" color=blue]
+Node87->Node84 [label = "SUBSCR" color=blue]
+Node89->Node90 [label = "OPVAR" color=blue]
+Node89->Node94 [label = "OPVAR" color=blue]
+Node90->Node91 [label = "LEFTVAR" color=blue]
+Node90->Node93 [label = "RIGHTVAR" color=blue]
+Node91->Node92 [label = "SUBSCR" color=blue]
+Node94->Node95 [label = "LEFTVAR" color=blue]
+Node94->Node96 [label = "RIGHTVAR" color=blue]
+Node95->Node92 [label = "SUBSCR" color=blue]
+Node97->Node98 [label = "AST" color=blue]
+Node98->Node99 [label = "DEFINEVAR" color=blue]
+Node98->Node100 [label = "USEVAR" color=blue]
+Node100->Node99 [label = "OPVAR" color=blue]
+Node100->Node101 [label = "OPVAR" color=blue]
+Node102->Node103 [label = "LEFTVAR" color=blue]
+Node102->Node104 [label = "RIGHTVAR" color=blue]
+Node105->Node106 [label = "AST" color=blue]
+Node106->Node107 [label = "PARLIST" color=blue]
+Node107->Node108 [label = "PARAMETER" color=blue]
+Node107->Node109 [label = "PARAMETER" color=blue]
+}

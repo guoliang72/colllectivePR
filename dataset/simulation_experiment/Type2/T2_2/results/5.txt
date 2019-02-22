@@ -1,0 +1,23 @@
+1357.8877724569486
+Base4.cds.dot 10: i = 1
+Base4.cds.dot 19: a = 0.5 * 100
+Base2.cds.dot 12: a < i
+Base2.cds.dot 21: sum = sum + 100
+Base5.cds.dot 12: a < n
+Base5.cds.dot 14: (a >= 100) && (a < 200)
+Base5.cds.dot 15: a = 0.1 * a
+Base5.cds.dot 16: (a >= sum) && (a < 500)
+Base5.cds.dot 17: a = 0.3 * a
+Base5.cds.dot 18: a >= 500
+Base0.cds.dot 12: a < i
+Base9.cds.dot 15: a = a * i
+Base9.cds.dot 18: a >= sum
+Base1.cds.dot 15: a = a * i
+Base1.cds.dot 21: sum = a + 1
+Base3.cds.dot 16: (a >= sum) && (a < 500)
+Base8.cds.dot 10: i = 1
+Base8.cds.dot 14: (a >= sum) && (a < 200)
+Base7.cds.dot 16: (a >= 200) && (a < n)
+Base7.cds.dot 17: a = 0.3 * 10
+Base6.cds.dot 14: (a >= sum) && (a < 200)
+Base6.cds.dot 17: a = a * n
